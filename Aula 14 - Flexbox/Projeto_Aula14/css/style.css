@@ -1,0 +1,122 @@
+* {
+    padding:0;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+/* Main axis e cross axis */
+.tituloContainer {
+    margin:10px;   
+    padding:5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*Propriedades flex container*/
+.container {   
+
+    width: 600px;
+    height: 600px;
+    margin: 3% auto;    
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+ 
+   
+   /*   display: flex;*/
+   /*  flex-direction: | row | row-reverse | column | column-reverse */
+   /*  flex-wrap:   | nowrap | wrap | wrap-reverse |*/  
+   /*  justify-content:  | flex-start | flex-end | center | space-between | space-around | */
+   /*  align-items:  | stretch | flex-start | flex-end |  center | baseline | */
+}
+
+
+/* Flex Item */
+.item {
+
+    width: 50px;
+	margin: 5px;
+	padding: 0 10px;
+	background:orangered;
+	text-align: center;
+	font-size: 1.5em;    
+
+    /* order: */
+    /* align-self: | auto | flex-start | flex-end |  center | baseline | */
+    /* flex-grow: 0; */   
+}
+
+.item:nth-child(1){
+    order:1;
+    flex-grow: 1;
+}
+
+.item:nth-child(2){
+    order:2;
+}
+
+
+
+ul {
+    
+    background-color: indianred;    
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+ 
+li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block; 
+    width: 100%;
+    height: 50px;    
+    padding:15px;
+    transition: background-color 1s ease;
+}
+
+li a:hover {
+    background-color: rgb(148, 65, 65);
+}
+
+.containerCard {
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.itemCard {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 1%;
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemCard h3 {
+    align-self: center;
+    padding: 5px;
+}
+
+.itemCard p {
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.itemCard button {
+    align-self: flex-end;
+}
+
