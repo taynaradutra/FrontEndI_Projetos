@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.divEx1{
+
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aqua;
+    animation: deslizar 3s  infinite;   
+
+}
+
+@keyframes deslizar {
+    
+    0% {opacity:0%;}
+    100% {opacity:100%; transform: translateX(400px)}
+}
+
+.divEx2 {
+
+    width: 300px;    
+    margin: 120px;
+    transition: .3s transform;
+    
+}
+
+.divEx2 img {
+    border: 1px solid;
+    width: 300px;
+}
+
+.divEx2:hover{
+
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+
+
+.botao {
+    margin: 100px;
+    width: 400px;
+    height: 100px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    transition-property: background-color;
+    transition-timing-function: ease;
+    transition-duration: .5s;
+
+}
+
+.botao:hover {
+    background-color: rgb(44, 33, 33);
+    font-weight: bold;
+}
+

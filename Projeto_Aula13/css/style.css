@@ -1,0 +1,125 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+div {
+    margin: 20px;
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    margin: 5%;  
+    transition-property: width, height;
+    transition-duration: 1s, 3s;
+    transition-delay: 1s, 3s;
+    transition-timing-function: cubic-bezier(.34,1.04,.86,.12);
+}
+
+.box1:hover{
+    background-color: darkblue;
+    width: 400px;
+    height: 400px;
+}
+
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    margin: 5%;  
+    transition: transform 2s ease;
+}
+
+.box2:hover {
+   animation: deslizar 3s infinite;
+}
+
+@keyframes deslizar {
+
+    0% {opacity: 0%;}
+    50%{opacity: 100%; transform: scale(1.5) rotate(90deg) translateX(100px)}
+    100%{transform:scale(2)}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formulario {
+    width: 300px;  
+    height: 320px;
+    border: 2px solid rgb(255, 136, 0);
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.formulario h1 {
+    margin: 20px;
+}
+
+.formulario input {
+    margin-top: 3px;
+    padding: 2px;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1.5px solid grey;
+    border-radius: 5px;
+    
+}
+
+.formulario input[type="submit"]{
+    height: 40px;
+    border: none;
+    background-color: rgb(255, 136, 0);   
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+    
+}
+
+
+.formulario input[type="submit"]:hover{
+    transform: scale(1.1);
+    background-color: orangered;
+    color: white
+}
+
+
+.formulario input[type="email"]:focus {
+    animation: treme 0.1s;
+    animation-iteration-count: 3;
+  }
+  
+ @keyframes treme {
+    0% {margin-left: 0;}
+    25% {margin-left: 5px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -5px;}
+    100% {margin-left: 0;}
+}
+
+
