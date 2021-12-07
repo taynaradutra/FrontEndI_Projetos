@@ -1,0 +1,11 @@
+@media (min-width: 1280px) {
+    .button {
+      display: inline-block;
+      margin-left: 5px;
+      margin: 0;
+      width: auto;
+    }
+    .alinhar {
+      float: left;
+    }
+  }

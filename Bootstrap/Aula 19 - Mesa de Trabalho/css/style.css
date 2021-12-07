@@ -1,0 +1,18 @@
+#header .navbar {  
+    background-color: rgb(255, 98, 255);
+    color: white;
+    
+}
+
+#banner .row .banner {
+    height: 100vh;
+}
+
+.btn-outline-primary {
+    background-color: purple;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}

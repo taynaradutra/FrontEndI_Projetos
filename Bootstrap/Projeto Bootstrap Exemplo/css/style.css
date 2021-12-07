@@ -1,0 +1,102 @@
+@import url("responsividade.css");
+
+.html {
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  scroll-behavior: smooth;
+}
+
+#header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+#header .navbar {
+  background-color: #ee4401;
+  color: #0a0909;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+#header .nav-link {
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+}
+
+#header .nav-link:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.button {
+  text-transform: uppercase;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  color: #0a0909;
+  border: 1px solid #ee4401;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.button:hover {
+  background-color: #b83400;
+  border: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btn-primary {
+  background-color: #ee4401;
+}
+
+.btn-outline-success {
+  background-color: white;
+  color: #ee4401;
+  border: 1px solid #ee4401;
+  text-transform: uppercase;
+}
+
+.btn-outline-success:hover {
+  background-color: #b83400;
+  border: 1px solid #ee4401;
+}
+
+.textos-sobre {
+  text-align: justify;
+}
+
+.subtitulo-sobre {
+  color: grey;
+  font-size: 1rem;
+}
+
+.card {
+  gap: 15px;
+}
+
+
+#footer {
+  background-color: #ee4401;
+  height: 100px;
+}
+
+@media (min-width: 1280px) {
+  .button {
+    display: inline-block;
+    margin-left: 5px;
+    margin: 0;
+    width: auto;
+  }
+  .alinhar {
+    float: left;
+  }
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
