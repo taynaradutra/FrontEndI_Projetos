@@ -1,0 +1,139 @@
+@media (min-width: 1280px) {
+  .button {
+    display: inline-block;
+    margin-left: 5px;
+    margin: 0;
+    width: auto;
+  }
+  .alinhar {
+    float: left;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.html {
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  scroll-behavior: smooth;
+}
+
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+#header .navbar {
+  background-color: #ee4401;
+  color: #0a0909;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+#header .nav-link {
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+}
+
+#header .nav-link:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.btn-primary {
+  text-transform: uppercase;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  color: #0a0909;
+  border: 1px solid #ee4401;
+  background-color: #ee4401;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.btn-primary:hover {
+  background-color: #b83400;
+  border: #b83400;
+}
+
+.btn-outline-primary {
+  text-transform: uppercase;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  color: #0a0909;
+  border: 1px solid #ee4401;
+  background-color: white;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+  color: #ee4401;
+}
+
+.btn-outline-primary:hover {
+  background-color: #b83400;
+  border: #b83400;
+}
+
+.btn-outline-success {
+  text-transform: uppercase;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  color: #0a0909;
+  border: 1px solid #ee4401;
+  background-color: white;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+  color: #ee4401;
+  width: auto;
+}
+
+.btn-outline-success:hover {
+  background-color: #b83400;
+  border: #b83400;
+}
+
+.textos-sobre {
+  text-align: justify;
+}
+
+.subtitulo-sobre {
+  color: grey;
+  font-size: 1rem;
+}
+
+.card {
+  gap: 15px;
+}
+
+@media (max-width: 599px) {
+  .card {
+    margin-bottom: 15px;
+  }
+  .card .tam {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+
+#footer {
+  background-color: #ee4401;
+  height: 100px;
+}
+/*# sourceMappingURL=style.css.map */

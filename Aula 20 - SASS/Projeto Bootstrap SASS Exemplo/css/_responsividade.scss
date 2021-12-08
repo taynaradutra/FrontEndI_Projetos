@@ -1,0 +1,26 @@
+@media (min-width: 1280px) {
+    .button {
+      display: inline-block;
+      margin-left: 5px;
+      margin: 0;
+      width: auto;
+    }
+    .alinhar {
+      float: left;
+    }
+}
+
+@mixin card-breakpoint-sm {
+
+    @media (max-width: 599px) {    
+        margin-bottom: 15px;
+        
+        .tam {
+            margin-left: 15%;
+            margin-right:15%;
+            margin-bottom: 15px;
+            margin-top: 15px;
+    
+        }
+    }        
+}

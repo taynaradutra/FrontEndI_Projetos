@@ -1,0 +1,83 @@
+@import 'variaveis';
+@import 'mixin';
+@import 'responsividade';
+
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.html {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+  }
+  
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    
+}
+  
+#header {
+
+    .navbar {
+        background-color: $primary_color;
+        color: #0a0909;
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.3)
+    }
+   
+    .nav-link {
+        border-bottom: 2px solid transparent;
+        font-weight: bold;
+
+        &:hover {
+            color: white;
+            border-bottom: 2px solid white;
+        }
+    }
+    
+}  
+
+  
+.btn-primary {
+    @include button($primary-color, $primary-color, $secondary-color, $secondary-color);    
+}
+
+.btn-outline-primary {
+    @include button(white, $primary-color, $secondary-color, $secondary-color);    
+    color:$primary-color;
+}
+  
+.btn-outline-success {
+    @include button(white, $primary-color, $secondary-color, $secondary-color); 
+    color: #ee4401;
+    width: auto;
+} 
+
+  
+.textos-sobre {
+    text-align: justify;
+}
+  
+.subtitulo-sobre {
+    color: grey;
+    font-size: 1rem;
+}
+  
+.card {
+    gap: 15px;
+
+    @include card-breakpoint-sm;
+}
+  
+  
+#footer {
+    background-color: #ee4401;
+    height: 100px;
+}
+
+  

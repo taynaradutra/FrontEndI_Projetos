@@ -1,0 +1,18 @@
+@mixin button($background, $border, $hover, $border-hover) {
+    text-transform: uppercase;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    color: #0a0909;
+    border: 1px solid $border;
+    background-color: $background;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: ease .3s;
+
+    &:hover {
+        background-color:$hover;    
+        border: $border-hover;
+    }
+}
+  
